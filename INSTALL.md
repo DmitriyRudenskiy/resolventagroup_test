@@ -22,3 +22,4 @@ composer run test
 
     php artisan google:calendar 2018-01-01 2018-01-14
     
+ \ ['Russian Holidays', 'en.russian#holiday@group.v.calendar.google.com'],
