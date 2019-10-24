@@ -1,7 +1,11 @@
 {
     "name": "resolventagroup_test",
     "description": "Test work for company Resolventa Group",
-    "keywords": ["framework", "laravel", "lumen"],
+    "keywords": [
+        "framework",
+        "laravel",
+        "lumen"
+    ],
     "authors": [
         {
             "name": "Dmitriy Rudenskiy",
@@ -41,6 +45,7 @@
         "phpcs": "./vendor/bin/phpcs --colors --report-full --standard=PSR12 app/",
         "phpcpd": "./vendor/bin/phpcpd app/",
         "phpmd": "./vendor/bin/phpmd src/ text cleancode,codesize,controversial,design,naming,unusedcode",
+        "test": "./vendor/bin/phpunit --bootstrap vendor/autoload.php --testdox tests",
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ]
@@ -53,3 +58,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true
 }
+
+
+

@@ -10,6 +10,11 @@ use Carbon\Carbon;
 class EmployeeScheduleServices
 {
     /**
+     * @var array
+     */
+    private $storage = [];
+
+    /**
      * @param Employee $employee
      * @param Carbon $start
      * @param Carbon $end
@@ -24,6 +29,6 @@ class EmployeeScheduleServices
      */
     public function get()
     {
-        return [];
+        return ["schedule" => $this->storage];
     }
 }
