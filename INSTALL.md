@@ -10,9 +10,15 @@ php -S 0.0.0.0:8080 -t public
 composer run test
 
 ## Установка первичных данных
-    // Загружаем seeds
+1. Создаём таблицы
+
+    php artisan migrate
+
+2. Загружаем seeds
+
     php artisan db:seed
     
-    // Загружаем праздники из Google Calendar
+3. Загружаем праздники из Google Calendar
+
     php artisan google:calendar 2018-01-01 2018-01-14
     
